@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-abstract public class MemoryDbRepositoryAbstact<T extends MemoryDbEntity> implements MemoryDbRepositoryIfs<T> {
+abstract public class MemoryDbRepositoryAbstract<T extends MemoryDbEntity> implements MemoryDbRepositoryIfs<T> {
     private final List<T> db = new ArrayList<>(); //db 리스트 넣기
 
     private int index = 0;
@@ -49,7 +49,7 @@ abstract public class MemoryDbRepositoryAbstact<T extends MemoryDbEntity> implem
     }
 
     @Override
-    public List<T> listAll() {
+    public List<T> findAll() {
         return db;
     }
 }

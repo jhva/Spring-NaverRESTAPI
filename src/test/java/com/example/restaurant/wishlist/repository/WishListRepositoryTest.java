@@ -1,7 +1,7 @@
 package com.example.restaurant.wishlist.repository;
 
 
-import com.example.restaurant.wishlist.entity.WishListentity;
+import com.example.restaurant.wishlist.entity.WishListEntity;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,12 +13,12 @@ public class WishListRepositoryTest {
     @Autowired
     private WishRepository wishListRepository;
 
-    private WishListentity create() {
-        var wishList = new WishListentity();
+    private WishListEntity create() {
+        var wishList = new WishListEntity();
         wishList.setTitle("title");
         wishList.setCategory("category");
         wishList.setAddress("address");
-        wishList.setReadAddress("readAddress");
+        wishList.setRoadAddress("readAddress");
         wishList.setHomePageLink("");
         wishList.setImageLink("");
         wishList.setVisit(false);
